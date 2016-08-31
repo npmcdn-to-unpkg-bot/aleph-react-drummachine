@@ -9,5 +9,4 @@ react.js based drum-machine x-o-x-o
 
 ##Adding Samples
 
-Add a folder cotaining your samples to samples/*
-Add your samples title and url to the config object in app js for the corresponding drummachine.
+Add a folder containing your samples to samples/*. For every sample add the title and url to the config object in src/app.jsx.
