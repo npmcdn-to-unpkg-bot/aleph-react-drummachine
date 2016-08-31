@@ -1,0 +1,106 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i';
+* {
+  font-family: 'Roboto Mono', monospace; }
+
+body {
+  font-family: 'Roboto Mono', monospace; }
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    background-color: red; }
+  10% {
+    opacity: 1;
+    background-color: white; }
+  100% {
+    opacity: 1; } }
+
+.hidden {
+  display: none; }
+
+.button {
+  background: red; }
+  .button.stopped {
+    background: gray; }
+  .button:hover {
+    background: gray; }
+
+#app {
+  float: left;
+  padding: 50px 25px; }
+  #app .drone-container h1 {
+    font-size: 24px;
+    padding-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase; }
+    #app .drone-container h1:before {
+      content: '#';
+      color: red; }
+  #app .drone-container .player {
+    margin-right: 15px;
+    margin-bottom: 15px; }
+    #app .drone-container .player h1 {
+      font-family: "Roboto Mono";
+      font-size: 24px; }
+    #app .drone-container .player p {
+      font-size: 12px; }
+  #app .track {
+    float: left;
+    border-bottom: 1px dotted red;
+    margin-bottom: 20px;
+    padding-bottom: 10px; }
+    #app .track .controls h1 {
+      float: left;
+      margin-right: 20px; }
+    #app .track .controls button {
+      margin-top: -5px; }
+  #app .track:last-child {
+    border: none; }
+  #app .set-menu {
+    padding: 0px 20px; }
+  #app .steps {
+    padding: 0px; }
+  #app .step-container {
+    float: left;
+    padding: 0px 20px; }
+    @media only screen and (min-width: 64.063em) {
+      #app .step-container {
+        width: 12.5%; } }
+    #app .step-container .step.active {
+      border-color: red;
+      color: red; }
+  #app .step-container.playing:nth-child(1) .step {
+    animation: pulse 2s 0s infinite; }
+  #app .step-container.playing:nth-child(2) .step {
+    animation: pulse 2s 0.125s infinite; }
+  #app .step-container.playing:nth-child(3) .step {
+    animation: pulse 2s 0.25s infinite; }
+  #app .step-container.playing:nth-child(4) .step {
+    animation: pulse 2s 0.375s infinite; }
+  #app .step-container.playing:nth-child(5) .step {
+    animation: pulse 2s 0.5s infinite; }
+  #app .step-container.playing:nth-child(6) .step {
+    animation: pulse 2s 0.625s infinite; }
+  #app .step-container.playing:nth-child(7) .step {
+    animation: pulse 2s 0.75s infinite; }
+  #app .step-container.playing:nth-child(8) .step {
+    animation: pulse 2s 0.875s infinite; }
+  #app .step-container.playing:nth-child(9) .step {
+    animation: pulse 2s 1s infinite; }
+  #app .step-container.playing:nth-child(10) .step {
+    animation: pulse 2s 1.125s infinite; }
+  #app .step-container.playing:nth-child(11) .step {
+    animation: pulse 2s 1.25s infinite; }
+  #app .step-container.playing:nth-child(12) .step {
+    animation: pulse 2s 1.375s infinite; }
+  #app .step-container.playing:nth-child(13) .step {
+    animation: pulse 2s 1.5s infinite; }
+  #app .step-container.playing:nth-child(14) .step {
+    animation: pulse 2s 1.625s infinite; }
+  #app .step-container.playing:nth-child(15) .step {
+    animation: pulse 2s 1.75s infinite; }
+  #app .step-container.playing:nth-child(16) .step {
+    animation: pulse 2s 1.875s infinite; }
+  #app .step-container.playing:nth-child(17) .step {
+    animation: pulse 2s 2s infinite; }

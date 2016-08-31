@@ -1,0 +1,20 @@
+{
+  "name": "drone_synth_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-react": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "react": "^15.3.1",
+    "react-music": "^1.0.1"
+  }
+}
