@@ -10,6 +10,7 @@ module.exports = React.createClass({
     return <reactMusic.Sampler
       sample={'samples/' + this.props.sample}
       steps={[this.props.position]}
+      gain={this.props.gain}
     />
   }
 });

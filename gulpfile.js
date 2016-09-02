@@ -28,6 +28,8 @@ gulp.task('default',function(){
 
   build();
   bundler.on('update', build);
+
+  gulp.watch('assets/**/*.scss',['scss']);
 });
 
 gulp.task("scss", function () {

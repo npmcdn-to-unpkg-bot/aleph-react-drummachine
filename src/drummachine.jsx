@@ -21,7 +21,6 @@ module.exports = React.createClass({
   },
   render: function(){
     var player =  this.props.player.map(function(single_player) {
-      console.log(single_player);
       return <Player
         title={single_player.title}
         type={single_player.type}
@@ -33,8 +32,7 @@ module.exports = React.createClass({
     });
     return <div className="drone-container">
       <div className="controls">
-        <h1>{this.props.title}</h1>
-        <button onClick={this.stopTrack} className={"button " + (this.state.playing ? "" : "stopped")}>{(this.state.playing ? "stop" : "play")}</button>
+        <button onClick={this.stopTrack} className={"button " + (this.state.playing ? "" : "stopped")}>{(this.state.playing ? "אפס" : "אחד")}</button>
       </div>
       <div className="menu-container small-12 columns">
         <Sequencer sample_prefix={this.props.config.sample_prefix} playerObject={this.props.player} samples={this.props.samples} updatePlayer={this.updatePlayerLength} status={this.state.playing} />

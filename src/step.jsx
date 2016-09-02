@@ -10,9 +10,9 @@ module.exports = React.createClass({
   },
   handleChange: function(e){
     if(e.target.value == 'mute.wav') {
-      this.setState({ active: false });
+      this.setState({ active: false, active_sample: e.target.value });
     } else {
-      this.setState({ active: true });
+      this.setState({ active: true, active_sample: e.target.value });
     }
 
     for(var i = 0;i < this.props.playerObject.length; i++) {
@@ -34,7 +34,6 @@ module.exports = React.createClass({
   renderOptions: function(){
     var options = [];
     for(var i = 0; i < this.props.samples.length; i++) {
-      console.log(this.props.samples[i].url);
       options.push(<option value={this.props.samples[i].url}>{this.props.samples[i].title}</option>);
     }
 
@@ -42,7 +41,7 @@ module.exports = React.createClass({
   },
   render: function(){
     return <div className={"step-container small-6 medium-3 columns " + (this.props.status ? "playing" : "")}>
-      <select className={"step " + (this.state.active ? "active" : "")} onChange={this.handleChange}>
+      <select className={"step " + (this.state.active ? "active" : "")} onChange={this.handleChange} data-activesample={this.state.active_sample}>
         {this.renderOptions()}
       </select>
     </div>

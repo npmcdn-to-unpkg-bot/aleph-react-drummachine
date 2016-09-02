@@ -28,6 +28,14 @@ var machine_one = {
     {
       title: "Tom",
       url: "tom.wav"
+    },
+    {
+      title: "Rattle",
+      url: "rattle.wav"
+    },
+    {
+      title: "Kick Alt",
+      url: "kick_alt.wav"
     }
   ]
 }
@@ -59,6 +67,14 @@ var machine_two = {
     {
       title: "Tom",
       url: "tom.wav"
+    },
+    {
+      title: "Reso Kick",
+      url: "reso_kick.wav"
+    },
+    {
+      title: "Kick Snare",
+      url: "kick_snare.wav"
     }
   ]
 }
@@ -76,13 +92,37 @@ var machine_three = {
       url: "mute.wav"
     },
     {
-      title: "Bass",
-      url: "kick.wav"
+      title: "Drone 1",
+      url: "drone_1.wav"
     },
     {
-      title: "Arp",
-      url: "loop_2.wav"
-    }
+      title: "Drone 2",
+      url: "drone_2.wav"
+    },
+    {
+      title: "Drone 3",
+      url: "drone_3.wav"
+    },
+    {
+      title: "Drone 4",
+      url: "drone_4.wav"
+    },
+    {
+      title: "Drone 5",
+      url: "drone_5.wav"
+    },
+    {
+      title: "Drone 6",
+      url: "drone_6.wav"
+    },
+    {
+      title: "Drone 7",
+      url: "drone_7.wav"
+    },
+    {
+      title: "Drone 8",
+      url: "drone_8.wav"
+    },
   ]
 }
 
